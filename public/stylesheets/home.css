@@ -1,0 +1,123 @@
+body {
+    text-align: center;
+    font-family: var(--main-font);
+    background: var(--color-1);
+    margin: 0;
+}
+
+#hero {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#hero img {
+    box-shadow: var(--box-shadow-1);
+}
+
+.card img {
+    box-shadow: var(--box-shadow-card-img);
+}
+
+.card button {
+    color: white;
+    box-shadow: var(--box-shadow-button);
+    border-style: none;
+    background: var(--button-bg-blue);
+    font-family: Baskerville;
+}
+
+@media (min-width: 1001px) {
+    #hero {
+        width: 100%;
+    }
+    video {
+        object-fit: fill;
+        width: 60%;
+        height: 72vh;
+        box-shadow: var(--box-shadow-1);
+    }
+    #hero img {
+        width: 100%;
+        height: 28rem;
+        border-radius: 3px;
+    }
+    
+    #cards {
+        /* margin: var(--content-spacing-pc) 0; */
+        margin: 3rem 0;
+    }
+    
+    .card {
+        display: inline-block;
+        width: 15%;
+        margin: 0 2.5%;
+        background: white;
+        box-shadow: 0px 5px 10px black;
+        border-radius: 3px;
+    }
+    
+    .card img {
+        width: 80%;
+        border-radius: 3px;
+    }
+    
+    .card button {
+        margin: 1.25rem auto;
+        width: 49.4%;
+        font-size: 1rem;
+        padding: 0.75rem;
+        border-radius: 3px;
+    }
+    
+    h3 {
+        font-size: var(--card-h3-size-pc);
+    }
+}
+
+@media (max-width: 1000px) {
+    #hero {
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        margin-bottom: 7.5rem;
+    }
+
+    #hero img, video {
+        width: 100%;
+        box-shadow: 0px 5px 10px black;
+    }
+    
+    h3 {
+        font-size: 5.5rem;
+        font-weight: 400;
+        padding: 3.5rem 0 3.5rem 0;
+        margin: 0;
+    }
+    
+    .card {
+        background: white;
+        margin: 7.5rem auto 7.5rem auto;
+        width: 77.066%;
+        box-shadow: 0px 5px 10px black;
+        border-radius: 8px;
+    }
+    
+    .card img {
+        width: 81.31%;
+        margin: 0 auto;
+        display: block;
+        border-radius: 8px;
+    }
+    
+    .card button {
+        margin: 3.5rem auto 3.5rem auto;
+        width: 50%;
+        background: #3B5998;
+        font-size: 3rem;
+        padding: 1.5rem 0;
+        color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        border-style: none;
+        border-radius: 8px;
+    }
+}

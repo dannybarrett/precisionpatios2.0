@@ -1,0 +1,317 @@
+:root {
+    --color-1: #FDE1CD;
+    --font-main: Baskerville;
+    --font-secondary: Copperplate;
+    --button-bg-blue: #3B5998;
+    --button-bg-green: #7DC66E; 
+    --box-shadow-1: 0px 5px 10px black;
+    --box-shadow-card-img: -2px 2px 2px rgba(0, 0, 0, 0.6);
+    --box-shadow-button: 0 2px 4px rgba(0, 0, 0, 0.8);
+    --card-h3-size-pc: 1.4rem;
+    --content-spacing-pc: 4.5rem;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+}
+
+@keyframes enlarging {
+    0% { width: 50%; }
+    100% {
+        width: 100%;
+    }
+}
+
+.enlarge {
+    animation: enlarging 0.05s;
+}
+
+nav {
+    background: white;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    width: 100%;
+    /*position: -webkit-sticky;*/
+    top: 0px;
+    height: 4rem;
+}
+
+#pc-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+#contact-dropdown {
+    justify-self: start;
+}
+
+#hamburger {
+    justify-self: end;
+}
+
+#contact-button {
+    width: 100%;
+    background: var(--button-bg-green);
+    color: white;
+    border-style: none;
+    justify-self: start;
+}
+
+#nav-dropdown {
+    justify-self: end;
+    display: grid;
+}
+
+
+#mobile-nav, #pc-nav {
+    background: white;
+    box-shadow: var(--box-shadow-1);
+    margin-top: -5px;
+    /*position: relative;*/
+    z-index: 2;
+    /*overflow-y: hidden;*/
+    font-family: var(--font-secondary);
+}
+
+h1 {
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    margin: 0;
+}
+
+#hidden-contact {
+    display: none;
+    background: white;
+    text-align: left;
+}
+
+#hidden-links {
+    background: white;
+    text-align: left;
+    display: none;
+    overflow-y: hidden;
+}
+
+#hidden-links div {
+    text-decoration: none;
+}
+
+#hidden-links div a {
+    text-decoration: none;
+}
+
+#hidden-links div a:visited {
+    color: #0921EA;
+}
+
+/*Computers*/
+@media (min-width: 1001px) {
+    #mobile-nav {
+        display: none;
+    }
+    
+    #pc-nav nav {
+        display: grid;
+        grid-template-columns: 10% 40% 50%;
+        padding: 1rem 1.5rem;
+    }
+    
+    #logo {
+        width: 7.8%;
+    }
+    
+    #banner {
+        text-align: left;
+        align-self: center;
+    }
+    
+    #logo {
+        width: 60%;
+    }
+    
+    #company-name {
+        justify-self: start;
+        align-self: end;
+    }
+    
+    #company-name a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #nav-links {
+        justify-self: end;
+        align-self: end;
+        font-size: 1.5rem;
+        padding-right: 2rem;
+    }
+    
+    #nav-links a {
+        text-decoration: none;
+        color: black;
+        margin: 0 0.5rem;
+    }
+    
+    #active-link {
+        color: rgba(0, 0, 0, 0.7) !important;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    #hidden-products-pc {
+        /*background: blue;*/
+        /*margin-top: 5.35rem;*/
+        /*position: sticky;*/
+        /*position: -webkit-sticky;*/
+        /*position: fixed;*/
+        /*margin-left: 75%;*/
+        width: 100%;
+        /*text-align: right;*/
+        /*right: 0;*/
+        /*left: 0;*/
+        /*justify-self: end;*/
+        font-size: 1.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+        text-align: right;
+        /*border-left: 1px solid black;*/
+        /*border-bottom: 1px solid black;*/
+        display: none;
+    }
+    
+    #hidden-products-pc a {
+        /*background: blue;*/
+        display: block;
+        text-decoration: none;
+        color: black;
+        /*padding-right: 10%;*/
+        /*background: white;*/
+        margin: 0.5rem 3.25% 0 86.75%;
+        width: 10%;
+        font-size: 1rem;
+        /*right: 0;*/
+    }
+    
+    #hidden-products-pc a:visited {
+        color: black;
+    }
+}
+
+
+/*Phones*/
+@media (max-width: 1000px) {
+    #mobile-nav {
+        display: relative;
+    }
+    
+    #pc-nav {
+        display: none;
+    }
+    
+    nav {
+        padding: 1.5rem 0 1.5rem 0;
+    }
+    
+    #contact-dropdown {
+        margin-left: 10%;
+        width: 27.5%;
+    }
+    
+    #contact-button {
+        font-size: 1.5rem;
+        border-radius: 1rem;
+        height: 4rem;
+    }
+    
+    #hidden-contact {
+        /*width: 20%;*/
+        margin-top: 5.46rem;
+        padding: 1rem 2rem;
+        font-size: 1.7rem;
+        position: fixed;
+        border-right: 1.5px solid black;
+        border-bottom: 1.5px solid black;
+    }
+    
+    #hidden-contact p a {
+        font-family: Baskerville;
+        text-decoration: none;
+    }
+    
+    #hidden-products-mob {
+        display: none;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+    
+    #hidden-products-mob a {
+        margin: 0.75rem 0;
+        display: block;
+    }
+    
+    #nav-dropdown {
+        width: 35%;
+        padding-right: 10%;
+    }
+    
+    #hamburger {
+        width: 80%;
+    }
+    
+    #hidden-links {
+        margin-top: 5.46rem;
+        padding: 0.5rem 2rem;
+        font-size: 3rem;
+        /*width: 20%;*/
+        right: 0px;
+        position: fixed;
+        text-align: right;
+        border-left: 1.5px solid black;
+        border-bottom: 1.5px solid black;
+        color: black;
+    }
+    
+    #hidden-links div {
+        margin: 1.2rem 0;
+        /*padding-left: -10%;*/
+        /*width: 20%;*/
+        color: black;
+    }
+    
+    #hidden-links div a {
+        color: black;
+    }
+    
+    #hidden-links div a:visited {
+        color: black;
+    }
+    
+    
+    #banner {
+        padding: 3.5rem 0px 6rem 0px;  
+        text-align: center;
+        font-family: Copperplate;
+    }
+    
+    #banner a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #logo {
+        width: 38.13%;
+    }
+    
+    h1 {
+        font-size: 5.5rem;
+    }
+}
