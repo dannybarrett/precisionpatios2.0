@@ -49,7 +49,7 @@ body {
     
     .card {
         display: inline-block;
-        width: 15%;
+        width: 17.5%;
         margin: 0 2.5%;
         background: white;
         box-shadow: 0px 5px 10px black;
@@ -57,13 +57,13 @@ body {
     }
     
     .card img {
-        width: 80%;
+        width: 82.5%;
         border-radius: 3px;
     }
     
     .card button {
         margin: 1.25rem auto;
-        width: 49.4%;
+        width: 50%;
         font-size: 1rem;
         padding: 0.75rem;
         border-radius: 3px;

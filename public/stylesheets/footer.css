@@ -12,7 +12,7 @@ footer p {
 footer img {
     width: 17.066%;
     height: 17.066%;
-    border-radius: 2.5rem;
+    border-radius: 8px;
     overflow: hidden;
     margin: 1.5rem 3rem;
 }
@@ -21,10 +21,15 @@ footer img {
     footer {
         padding: 2rem 0;
     }
+
+    footer p {
+        margin: 0.5rem;
+    }
     
     footer img {
-        width: 6%;
-        border-radius: 1rem;
+        width: 5%;
+        border-radius: 3px;
+        margin: 1.5rem;
     }
 }
 
