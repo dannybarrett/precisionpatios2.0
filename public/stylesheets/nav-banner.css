@@ -152,7 +152,7 @@ h1 {
         font-style: italic;
         font-family: var(--font-main);
         text-align: left;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     
     #nav-links {
@@ -318,7 +318,7 @@ h1 {
     #banner p {
         font-family: var(--font-main);
         font-style: italic;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     
     #logo {
