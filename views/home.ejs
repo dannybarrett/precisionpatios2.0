@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="stylesheets/nav-banner.css">
         <link rel="stylesheet" href="stylesheets/home.css">
         <link rel="stylesheet" href="stylesheets/footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     </head>
     <body>
         <% include ./partials/nav %>
@@ -22,7 +23,8 @@
                     <source srcset="img/decks/deck-cover-photo-800w.jpg" media="(min-width: 1001px)" />
                     <img src="img/decks/deck-cover-photo-400w.jpg" alt="Big deck with white handrail.">
                 </picture>
-                <a href="/decks"><button class>View more</button></a>
+                <a href="/decks"><button>View more</button></a>
+                <%# <button class="animated">View more</button> %>
             </div>
             <div class="card" id="sunrooms-card">
                 <h3>Sun Rooms</h3>
@@ -52,5 +54,6 @@
         </section>
         <% include ./partials/footer.ejs %>
         <script src="/javascript/navbar.js"></script>
+        <%# <script src="/javascript/home.js"></script> %>
     </body>
 </html>
