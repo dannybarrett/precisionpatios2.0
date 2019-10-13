@@ -14,8 +14,12 @@
             <h2>Covers</h2>
             <section id="cards">
                 <div class="card">
-                    <img src="https://i.gyazo.com/14af1e08f69203c22de30021cf835452.jpg">
-                    <a href="covers/1"><button class="see-all">See all photos</button></a>
+                    <picture>
+                        <source srcset="img/covers/1/1-2000w.jpg" media="(min-width: 2001px)" />
+                        <source srcset="img/covers/1/1-1000w.jpg" media="(min-width: 1001px)" />
+                        <img src="img/covers/1/1-750w.jpg" alt="">
+                    </picture>
+                    <a href="covers/1"><button class="see-all">See all photos (3)</button></a>
                 </div>
                 <div class="card">
                     <img src="https://i.gyazo.com/60b023df5b5bd53155f64b69c08164a9.jpg">

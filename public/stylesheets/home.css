@@ -14,6 +14,28 @@ body {
     box-shadow: var(--box-shadow-1);
 }
 
+#badges {
+    /* width: 100%; */
+    /* display: inline; */
+    margin: 5rem auto;
+    background: white;
+    height: 15rem;
+    padding: 1.5rem 0 0 0;
+    box-shadow: var(--box-shadow-1);
+}
+
+.badge {
+    padding: 1rem 2rem;
+    width: 20%;
+    height: 10rem;
+    display: inline;
+}
+
+.badge img {
+    display: inline;
+    width: 10%;
+}
+
 .card img {
     box-shadow: var(--box-shadow-card-img);
 }
