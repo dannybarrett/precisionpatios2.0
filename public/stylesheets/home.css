@@ -35,6 +35,11 @@ body {
     vertical-align: middle;
 }
 
+#fs-badge {
+    vertical-align: top;
+}
+
+
 .badge img {
     display: inline;
     width: 100%;
@@ -44,6 +49,7 @@ body {
 #bbb-img {
     width: 150%;
     height: 150%;
+    /* vertical-align: center; */
     /* background: blue; */
 }
 
