@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
 
 const decks = 18;
-const sunrooms = 8;
+const sunrooms = 19;
 const covers = 30;
 const pergolas = 2;
 
