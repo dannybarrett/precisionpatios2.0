@@ -12,9 +12,12 @@
     <body>
         <% include ./partials/nav %>
         <section id="hero">
-            <video muted="true" autoplay="true" loop="true" playsinline="true">
-                <source src="video/trailer.mp4" type="video/mp4">
+            <video id="trailer-video" muted="true" autoplay="true" loop="true" playsinline="true">
+                <source id="trailer-source" src="video/trailer.mp4" type="video/mp4">
+                    
             </video>
+            <button id="last-video">&larr;</button>
+            <button id="next-video">&rarr;</button>
         </section>
         <!-- <div id="action"> -->
             <!-- <button id="action-button">Contact Now</button> -->
@@ -65,6 +68,7 @@
         </section>
         <% include ./partials/footer.ejs %>
         <script src="/javascript/navbar.js"></script>
+        <script src="/javascript/videoslider.js"></script>
         <script src="https://ombwa.memberzone.com/Content/Script/Member.js" type="text/javascript"></script>
     <script type="text/javascript">
     new MNI.Widgets.Member("mni-membership-637052215150616722",{member:99104,styleTemplate:"#@id{text-align:center;position:relative}#@id .mn-widget-member-name{font-weight:700}#@id .mn-widget-member-logo{max-width:100%}"}).create();
