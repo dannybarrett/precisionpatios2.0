@@ -12,6 +12,7 @@ const pergolas = 2;
 
 app.get('/', (req, res) => { res.render('home'); });
 app.get('/about', (req, res) => { res.render('about'); });
+app.get('/contact', (req, res) => { res.render('contact'); });
 app.get('/decks', (req, res) => { res.render('decks'); });
 app.get('/sunrooms', (req, res) => { res.render('sunrooms'); });
 app.get('/covers', (req, res) => { res.render('covers'); }); 

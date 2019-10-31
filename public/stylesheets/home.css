@@ -42,6 +42,10 @@ body {
         border-radius: 3px;
     }
 
+    #action {
+        position: relative;
+    }
+
     #badges {
         /* width: 100%; */
         /* display: inline; */
@@ -131,6 +135,10 @@ body {
         font-weight: 400;
         padding: 3.5rem 0 3.5rem 0;
         margin: 0;
+    }
+
+    #action-button {
+        display: none;
     }
 
     #badges {

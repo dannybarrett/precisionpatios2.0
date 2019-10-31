@@ -1,0 +1,27 @@
+body {
+    background: var(--color-1);
+    font-family: var(--main-font);
+}
+
+#action-button {
+    display: none;
+}
+
+#contact-section {
+    text-align: center;
+    margin: 7.5rem auto;
+    width: 80%;
+    background: white;
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: var(--box-shadow-1);
+}
+
+#contact-div {
+    /* width: 30%; */
+    /* margin: 0 auto; */
+}
+
+#contact-div a {
+    text-decoration: none;
+}
